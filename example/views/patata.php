@@ -1,3 +1,3 @@
 <?php $this->layout('views::template') ?>
-
-<h1>¡Hola <?php echo $nombre?>!</h1>
+<?php echo $nombre?>
+<h1>¡Hola <?php $this->e($nombre)?>!</h1>

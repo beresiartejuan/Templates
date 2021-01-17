@@ -35,6 +35,10 @@ class Templates{
 		return;
 	}
 
+	public function e($param){
+		echo htmlentities($param, ENT_HTML5);
+	}
+
 	public function render(string $str, array $options){
 
 		$tmpdir = explode('::', $str)[0];
